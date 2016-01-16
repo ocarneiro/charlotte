@@ -7,5 +7,5 @@ def test_window_created():
     dummy = mock.Mock()
     dummy.window = mock.Mock()
     dummy.window.Window = mockwindow
-    canvas = Canvas(gl = dummy)
+    canvas = Canvas(gl=dummy)
     assert mockwindow.called
