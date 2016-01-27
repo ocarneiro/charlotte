@@ -13,3 +13,5 @@ canvas = charlotte.Canvas(800,600)
 canvas.draw_cube()
 canvas.draw_line(orientation='horizontal')
 ```
+
+My challenge now is to make it run interactively. Maybe I should run pyglet.app.run() in a thread.

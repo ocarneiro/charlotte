@@ -10,6 +10,7 @@ class Canvas(object):
             self.gl = gl
         self.window = self.gl.window.Window()
         self.app = self.gl.app
+        """ objects = everything that needs to be drawn """
         self.objects = {}
         self.setup_window()
 
@@ -31,6 +32,7 @@ class Canvas(object):
 
     def setup_window(self):
         self.window.on_draw = self.on_draw
+        # TODO run self.app.run() in a thread to allow interactivity
 
 
 if __name__ == '__main__':
